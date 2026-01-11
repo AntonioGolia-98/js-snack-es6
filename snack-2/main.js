@@ -11,11 +11,16 @@ function getRandomInt (min, max){
     return Math.floor( Math.random() * (max - min + 1) + min);
 }
 
-const puntiFalli = squadre.map(squadre =>({
+const puntiFalli = squadre.map(random =>({
+    nome: random.nome, 
     puntiFatti : getRandomInt(0, 100),
     falliSubiti : getRandomInt(0, 100)
-}))
+}));
 
+const squadreNomiFalli = puntiFalli.map(squadra =>({
+    nome : squadra.nome,
+    falliSubiti :squadra.falliSubiti
+}));
 
-
+console.log(squadreNomiFalli);
 

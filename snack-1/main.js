@@ -12,3 +12,6 @@ for (let i = 0; i < bike.length; i++) {
         bikeLight = bike[i];
     }    
 }
+
+console.log("la bici con il peso minore è:");
+console.log(`nome: ${bikeLight.nome}, peso: ${bikeLight.peso}.`);

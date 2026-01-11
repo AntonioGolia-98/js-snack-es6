@@ -8,7 +8,7 @@ const bike = [
 let bikeLight = bike [0];
 
 for (let i = 0; i < bike.length; i++) {
-    if(bike[i].peso < bikeLight){
+    if(bike[i].peso < bikeLight.peso){
         bikeLight = bike[i];
     }    
 }
